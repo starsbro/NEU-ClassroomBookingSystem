@@ -1,0 +1,3 @@
+This is NEU CSYE6200 final project, The Campus Facilities Reservation System is an innovative solution for managing room bookings across university campuses. It effectively addresses the issue of overcrowding in certain study areas.
+There are a lot of work to be done to complete this project, such as to explore dynamic database solutions and multiple user roles to cater to different types of users, such as students, faculty, and staff, each with unique access and functionality requirements. 
+Implementing a user-friendly signup process would not only expand the system's accessibility but also enhance user experience by allowing personalized settings and preferences.

@@ -11,7 +11,7 @@ import java.util.Optional;
 import java.util.Random;
 import java.util.ResourceBundle;
 import javafx.scene.input.MouseEvent;
-import com.mysql.cj.xdevapi.Statement;
+//import com.mysql.cj.xdevapi.Statement;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -305,6 +305,7 @@ public class dashboardController implements Initializable {
 
             Optional<ButtonType> option = alert.showAndWait();
 
+/*
             if (option.get().equals(ButtonType.OK)) {
 
                 //HIDE YOUR DASHBOARD FORM
@@ -336,7 +337,18 @@ public class dashboardController implements Initializable {
 
                 stage.setScene(scene);
                 stage.show();
+*/
+            if (option.isPresent() && option.get() == ButtonType.OK) {
+                // Close current stage
+                Stage currentStage = (Stage) logout.getScene().getWindow();
+                currentStage.close();
 
+                // Create a new instance of Main class and show primaryStage
+                Main main = new Main();
+                Stage primaryStage = new Stage();
+                main.start(primaryStage);
+
+            
             } else {
                 return;
             }
